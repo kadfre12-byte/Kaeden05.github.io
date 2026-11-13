@@ -1,0 +1,92 @@
+
+body {
+    background: white;
+    font-family: Arial;
+    margin: 18px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+/* All three buttons */
+.travel-button {
+    display: block;
+    width: 250px;
+    height: 94px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.future {
+    background: #ffb400;
+    color: black;
+    border: 2px solid gray;
+}
+
+.future .normal-text {
+    display: inline;
+}
+
+.future .secret-text {
+    display: none;
+}
+
+.future:hover .normal-text {
+    display: none;
+}
+
+.future:hover .secret-text {
+    display: inline;
+}
+
+.present {
+    background: #eef7ff;
+    color: green;
+    border: 2px solid gray;
+    transition: background-color 0.5s;
+}
+
+.present:hover {
+    background: turquoise;
+    transition-delay: 1s;
+}
+
+.past {
+    background: #eeeeee;
+    color: black;
+    border: 1px solid gray;
+    transition: border-radius 1s ease-in-out;
+}
+
+.past:hover {
+    border-radius: 50%;
+}
+
+.sunrise {
+    width: 267px;
+    height: 275px;
+    background: #d7e5f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+}
+
+.sun {
+    width: 25px;
+    height: 25px;
+    background: #ffea72;
+    border-radius: 50%;
+}
+
+.sunrise p {
+    color: gray;
+    font-family: Georgia;
+    font-size: 18px;
+    margin: 4px 0 0;
+}
